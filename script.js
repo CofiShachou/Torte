@@ -1,224 +1,4 @@
-// let y=0 ,z=0;
-// $("#meni").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(y==1){
-//         }
-//         else if(y==0){
-//             $(".dropDown").css("opacity","0");
-//             $(".dropDown").css("height","0px");
-//             setTimeout(() => {
-//                 $(".dropDown").css("display","none");
-//             }, 300);
-//             y=0;
-//             console.log("jedan nije");
-//         }
-//     }, 100);
-    
-        
-// })
-// $("#meni").mouseenter(()=>{
-//         $(".dropDown").css("display","flex");
-//         setTimeout(() => {
-//             $(".dropDown").css("opacity","1");
-//             $(".dropDown").css("height","20vw");
-//         }, 200);  
-//         z=1;
-        
-// })
-// $(".dropDown").mouseenter(()=>{
-//     y=1;
-//     z=0;
-// })
-// $(".dropDown").mouseleave(()=>{
-//     y=0;
-//     setTimeout(() => {
-//         if(z==1){
-            
-//         }
-//         else if(z==0)
-//         {
-//             $(".dropDown").css("opacity","0");
-//             $(".dropDown").css("height","0px");
-//             setTimeout(() => {
-//                 $(".dropDown").css("display","none");
-//             }, 300);
-//         }
-            
-//     }, 200);
-    
-
-// })
-
-
-
-
-
-// $("#torta,#kolac,#slano").click(()=>{
-//         $(".popUp").css("opacity","1")
-//         setTimeout(() => {
-//             $(".popUp").css("display","block")
-//         }, 200);
-// })
-// $("#torta").click(()=>{
-//         $("#tt").css("opacity","1")
-//         setTimeout(() => {
-//             $("#tt").css("display","block")
-//         }, 200);
-// })
-// $("#kolac").click(()=>{
-//         $("#kt").css("opacity","1")
-//         setTimeout(() => {
-//             $("#kt").css("display","block")
-//         }, 200);
-// })
-// $("#slano").click(()=>{
-//         $("#st").css("opacity","1")
-//         setTimeout(() => {
-//             $("#st").css("display","block")
-//         }, 200);
-// })
-// $("#close").click(()=>{
-//         $(".popUp").css("opacity","0")
-//         setTimeout(() => {
-//             $(".popUp").css("display","none")
-//             $("#tt").css("display","none")
-//             $("#kt").css("display","none")
-//             $("#st").css("display","none")
-//         }, 200);
-// })
-
-// let t1=0,t2=0
-// $("#torte").mouseenter(()=>{
-//     $("#subMeniTorte").css("display","block");   
-//     setTimeout(() => {
-//         $("#subMeniTorte").css("width","20vw");   
-//         $("#subMeniTorte").css("opacity","1");
-//     }, 100);
-//     t2=0;
-// })
-
-// $("#torte").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(t1==0){
-//             // $("#subMeniTorte").css("opacity","0");
-//         // $("#subMeniTorte").css("width","0vw");
-
-//             setTimeout(() => {
-//             }, 700);
-//             $("#subMeniTorte").css("display","none");
-//         }
-        
-//     }, 100);
-// })
-
-// $("#subMeniTorte").mouseenter(()=>{
-//     t1=1;
-//     t2=1;
-// })
-// $("#subMeniTorte").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(t2==1){
-//             // $("#subMeniTorte").css("opacity","0");
-//             // $("#subMeniTorte").css("width","0vw");
-//           setTimeout(() => {
-//         }, 700);
-//         $("#subMeniTorte").css("display","none");
-//         }
-//     }, 100);
-//     t1=0
-// })
-
-
-
-
-// let f1=0,f2=0;
-// $("#figure").mouseenter(()=>{
-//     $("#subMeniFigure").css("display","block");   
-//     setTimeout(() => {
-//         // $("#subMeniFigure").css("width","20vw");
-//         $("#subMeniFigure").css("opacity","1");
-//     }, 100);
-//     f2=0;
-// })
-
-// $("#figure").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(f1==0){
-//             // $("#subMeniFigure").css("opacity","0");
-//             // $("#subMeniFigure").css("width","0vw");
-
-//             setTimeout(() => {
-//             }, 700);
-//             $("#subMeniFigure").css("display","none");
-//         }
-        
-//     }, 100);
-// })
-
-// $("#subMeniFigure").mouseenter(()=>{
-//     f1=1;
-//     f2=1;
-// })
-// $("#subMenFiguree").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(f2==1){
-//             // $("#subMeniFigure").css("opacity","0");
-//             // $("#subMeniFigure").css("width","0vw");
-//           setTimeout(() => {
-//         }, 700);
-//         $("#subMeniFigure").css("display","none");
-//         }
-//     }, 100);
-//     f1=0
-// })
-
-
-
-
-
-
-
-// let u1=0,u2=0;
-// $("#figure").mouseenter(()=>{
-//     $("#subMeniFigure").css("display","block");   
-//     setTimeout(() => {
-//         // $("#subMeniFigure").css("width","20vw");
-//         $("#subMeniFigure").css("opacity","1");
-//     }, 100);
-//     f2=0;
-// })
-
-// $("#figure").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(f1==0){
-//             // $("#subMeniFigure").css("opacity","0");
-//             // $("#subMeniFigure").css("width","0vw");
-
-//             setTimeout(() => {
-//                 $("#subMeniFigure").css("display","none");
-//             }, 700);
-//         }
-        
-//     }, 100);
-// })
-
-// $("#subMeniFigure").mouseenter(()=>{
-//     f1=1;
-//     f2=1;
-// })
-// $("#subMenFiguree").mouseleave(()=>{
-//     setTimeout(() => {
-//         if(f2==1){
-//             // $("#subMeniFigure").css("opacity","0");
-//             // $("#subMeniFigure").css("width","0vw");
-//           setTimeout(() => {
-//             $("#subMeniFigure").css("display","none");
-//           }, 700);
-//         }
-//     }, 100);
-//     f1=0
-// })
-const sviNizovi= {
+const sviNizovi = {
     1:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
     2:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
     3:[31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
@@ -233,22 +13,61 @@ const sviNizovi= {
     12:[166,167,168,169,170,171,172,173,174,175,176,177,178,179,180],
     13:[181,182,183,184,185,186,187,188,189,190,191,192,193,194,195],
     14:[196,197,198,199,200,201,202,203,204,205,206,207,208,209,210],
-    15:[211,212,213,214,215,216,217,218,219,220,221,222,223,224,225]
+    15:[211,212,213,214,215,216,217,218,219,220,221,222,223,224,225],
+    16:[226,227,228,229,230,231,232,233,234,235,236,237,238,239,240],
+    17:[241,242,243,244,245,246,247,248,249,250,251,252,253,254,255],
+    18:[256,257,258,259,260,261,262,263,264,265,266,267,268,269,270],
+    19:[271,272,273,274,275,276,277,278,279,280,281,282,283,284,285],
+    20:[286,287,288,289,290,291,292,293,294,295,296,297,298,299,300],
+    21:[301,302,303,304,305,306,307,308,309,310,311,312,313,314,315],
+    22:[316,317,318,319,320,321,322,323,324,325,326,327,328,329,330],
+    23:[331,332,333,334,335,336,337,338,339,340,341,342,343,344,345],
+    24:[346,347,348,349,350,351,352,353,354,355,356,357,358,359,360],
+    25:[361,362,363,364,365,366,367,368,369,370,371,372,373,374,375],
+    26:[376,377,378,379,380,381,382,383,384,385,386,387,388,389,390],
+    27:[391,392,393,394,395,396,397,398,399,400,401,402,403,404,405],
+    28:[406,407,408,409,410,411,412,413,414,415,416,417,418,419,420],
+    29:[421,422,423,424,425,426,427,428,429,430,431,432,433,434,435],
+    30:[436,437,438,439,440,441,442,443,444,445,446,447,448,449,450],
+    31:[451,452,453,454,455,456,457,458,459,460,461,462,463,464,465],
+    32:[466,467,468,469,470,471,472,473,474,475,476,477,478,479,480],
+    33:[481,482,483,484,485,486,487,488,489,490,491,492,493,494,495],
+    34:[496,497,498,499,500,501,502,503,504,505,506,507,508,509,510],
+    35:[511,512,513,514,515,516,517,518,519,520,521,522,523,524,525],
+    36:[526,527,528,529,530,531,532,533,534,535,536,537,538,539,540],
+    37:[541,542,543,544,545,546,547,548,549,550,551,552,553,554,555],
+    38:[556,557,558,559,560,561,562,563,564,565,566,567,568,569,570],
+    39:[571,572,573,574,575,576,577,578,579,580,581,582,583,584,585],
+    40:[586,587,588,589,590,591,592,593,594,595,596,597,598,599,600],
+    41:[601,602,603,604,605,606,607,608,609,610,611,612,613,614,615],
+    42:[616,617,618,619,620,621,622,623,624,625,626,627,628,629,630],
+    43:[631,632,633,634,635,636,637,638,639,640,641,642,643,644,645],
+    44:[646,647,648,649,650,651,652,653,654,655,656,657,658,659,660],
+    45:[661,662,663,664,665,666,667,668,669,670,671,672,673,674,675],
+    46:[676,677,678,679,680,681,682,683,684,685,686,687,688,689,690],
+    47:[691,692,693,694,695,696,697,698,699,700,701,702,703,704,705],
+    48:[706,707,708,709,710,711,712,713,714,715,716,717,718,719,720],
+    49:[721,722,723,724,725,726,727,728,729,730,731,732,733,734,735],
+    50:[736,737,738,739,740,741,742,743,744,745,746,747,748,749,750],
+    51:[751,752,753,754,755,756,757,758,759,760,761,762,763,764,765],
+    52:[766,767,768,769,770,771,772,773,774,775,776,777,778,779,780],
+    53:[781,782,783,784,785,786,787,788,789,790,791,792,793,794,795],
+    54:[796,797,798,799,800,801,802,803,804,805,806,807,808,809,810],
+    55:[811,812,813,814,815,816,817,818,819,820,821,822,823,824,825]
 };
+
 let redniBrojStrane=1;
 let trenustniNiz=sviNizovi[redniBrojStrane];
 let idTorte;
 let maxStrana;
 
-//console.log("Sada je= ",trenustniNiz[0]);
-
 
 
 function strana(){
     idTorte=$(".idTorte").attr("id");
-    //console.log("idTorte= ",idTorte);
     
-    for(let i=1;i<16;i++){
+    
+    for(let i=1;i<56;i++){
         
         if(redniBrojStrane==i){
              $(".slikeWrap .slike img").css("opacity","0");
@@ -305,9 +124,6 @@ function strana(){
         }
     })
     maxStrana=$(".strane>p:last-of-type").text();
-    console.log("Max strana je:"+ maxStrana);
-    
-    console.log("Redni broj strane je: "+redniBrojStrane);
     
 }
 $(".pomeraj").click(function(){
@@ -375,6 +191,8 @@ let redniBrojSLike;
 $("#x").click(()=>{
     $(".view").css("display","none");
 })
+let minSlika;
+let maxSlika;
 
 $(document).on("click", ".slikaTorte", function() {
     $(".view").css("display","flex");  
@@ -382,34 +200,57 @@ $(document).on("click", ".slikaTorte", function() {
 
     redniBrojSLike=$(this).attr("id");
 
+    let vidljiveSlike=$(".slike > img").filter(function() {
+        return $(this).css("display") !== "none";
+    });
+    
+
+
+    minSlika = $(".slike > img:first-of-type").attr("id");
+    minSlika=minSlika.substring(2)
+
+    maxSlika = vidljiveSlike.last().attr("id");
+    maxSlika=maxSlika.substring(2)
     
     
 });
 let idSlike;
-let vrstaTorte
+let vrstaTorte;
 
 let redniBroj;
 
+
+
+
+
 $("#nazad").click(()=>{
+    
     redniBroj=redniBrojSLike;
-    vrstaTorte=redniBrojSLike.substring(0,2);
+    vrstaTorte=redniBrojSLike.substring(0,2);   
+    idSlike=redniBrojSLike.substring(2);
     
-    idSlike=redniBrojSLike.substring(2)
-    idSlike=parseInt(idSlike)-1;
+    minSlika=parseInt(minSlika);
     
-    
-    redniBrojSLike=vrstaTorte+idSlike;
-    $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    if(idSlike>minSlika){
+        idSlike=parseInt(idSlike)-1;
+        redniBrojSLike=vrstaTorte+idSlike;
+        $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    }
 })
 
 $("#napred").click(()=>{
+
     redniBroj=redniBrojSLike;
     vrstaTorte=redniBrojSLike.substring(0,2);
-    
     idSlike=redniBrojSLike.substring(2)
-    idSlike=parseInt(idSlike)+1;
     
     
-    redniBrojSLike=vrstaTorte+idSlike;
-    $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    
+    maxSlika=parseInt(maxSlika);
+
+    if(idSlike<maxSlika){
+        idSlike=parseInt(idSlike)+1;
+        redniBrojSLike=vrstaTorte+idSlike;
+        $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    }   
 })
