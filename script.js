@@ -65,7 +65,7 @@ let maxStrana;
 
 function strana(){
     idTorte=$(".idTorte").attr("id");
-    
+    trenustniNiz=sviNizovi[redniBrojStrane];
     
     for(let i=1;i<56;i++){
         
@@ -124,6 +124,8 @@ function strana(){
         }
     })
     maxStrana=$(".strane>p:last-of-type").text();
+ 
+    
     
 }
 $(".pomeraj").click(function(){
@@ -189,18 +191,31 @@ window.onload = function(){
 let redniBrojSLike;
 
 $("#x").click(()=>{
-    $(".view").css("display","none");
+    $(".view").css("opacity","0");  
+    setTimeout(() => {
+        $(".view").css("display","none");
+    }, 500);
+    $("body").css("overflow-y","auto");
 })
 let minSlika;
 let maxSlika;
+let vidljiveSlike
 
 $(document).on("click", ".slikaTorte", function() {
+    $("body").css("overflow-y","hidden");
+    $(window).scrollTop(0);
+
+    
     $(".view").css("display","flex");  
+    setTimeout(() => {
+        $(".view").css("opacity","1");  
+    }, 100);
     $("#velikaSlika").attr("src",$(this).attr("src"))
 
     redniBrojSLike=$(this).attr("id");
+    $("#sifra").text(redniBrojSLike)
 
-    let vidljiveSlike=$(".slike > img").filter(function() {
+    vidljiveSlike=$(".slike > img").filter(function() {
         return $(this).css("display") !== "none";
     });
     
@@ -224,6 +239,11 @@ let redniBroj;
 
 
 $("#nazad").click(()=>{
+    vidljiveSlike=$(".slike > img").filter(function() {
+        return $(this).css("display") !== "none";
+    });
+    minSlika = $(".slike > img:first-of-type").attr("id");
+    minSlika=minSlika.substring(2)
     
     redniBroj=redniBrojSLike;
     vrstaTorte=redniBrojSLike.substring(0,2);   
@@ -231,14 +251,27 @@ $("#nazad").click(()=>{
     
     minSlika=parseInt(minSlika);
     
-    if(idSlike>minSlika){
-        idSlike=parseInt(idSlike)-1;
-        redniBrojSLike=vrstaTorte+idSlike;
-        $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    idSlike=parseInt(idSlike)-1;
+    redniBrojSLike=vrstaTorte+idSlike;
+    $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    $("#sifra").text(redniBrojSLike)
+
+    if(idSlike==(minSlika-1)){
+        redniBrojStrane--;
+        strana();
     }
+
 })
 
 $("#napred").click(()=>{
+    console.log("Max slika: "+maxSlika);
+    vidljiveSlike=$(".slike > img").filter(function() {
+        return $(this).css("display") !== "none";
+    });
+    maxSlika = vidljiveSlike.last().attr("id");
+    maxSlika=maxSlika.substring(2);
+    
+    
 
     redniBroj=redniBrojSLike;
     vrstaTorte=redniBrojSLike.substring(0,2);
@@ -248,9 +281,16 @@ $("#napred").click(()=>{
     
     maxSlika=parseInt(maxSlika);
 
-    if(idSlike<maxSlika){
-        idSlike=parseInt(idSlike)+1;
-        redniBrojSLike=vrstaTorte+idSlike;
-        $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
-    }   
+    idSlike=parseInt(idSlike)+1;
+    redniBrojSLike=vrstaTorte+idSlike;
+    $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+    $("#sifra").text(redniBrojSLike)
+
+    if(idSlike==(maxSlika+1)){
+        
+        redniBrojStrane++;
+        strana();
+        
+    }
+
 })
