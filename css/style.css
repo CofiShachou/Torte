@@ -1,10 +1,10 @@
 @font-face{
     font-family: niga;
-    src:url(/resources/fonts/fontic.ttf);
+    src:url(../resources/fonts/fontic.ttf);
 }
 @font-face{
     font-family: nigan;
-    src:url(/resources/fonts/naslovi.ttf);
+    src:url(../resources/fonts/naslovi.ttf);
 }
 *{
     list-style-type:none ;
@@ -163,7 +163,7 @@ footer button{
 
 .hero{
     margin-top: 10px;
-    background-image:url(/resources/images/background.png);
+    background-image:url(../resources/images/background.png);
     background-size:1920px;
     background-repeat: no-repeat;
     background-position: 0px -300px;
