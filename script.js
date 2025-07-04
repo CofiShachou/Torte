@@ -56,6 +56,61 @@ const sviNizovi = {
     55:[811,812,813,814,815,816,817,818,819,820,821,822,823,824,825]
 };
 
+const presekTorti= {
+    1:"Boem torta",
+    2:"Bueno",
+    3:"Cheesecake",
+    4:"Coko visnja",
+    5:"Divlja ruza",
+    6:"Jafa",
+    7:"Kapri",
+    8:"Kinderino",
+    9:"Kreamasta sa orasima",
+    10:"Moskva",
+    11:"Nugat",
+    12:"Posna ester",
+    13:"Posna reforma",
+    14:"Puslica",
+    15:"Reforma",
+    16:"Snikers",
+    17:"Srneca leđa",
+    18:"Švarcvald",
+    19:"Tiramisu"
+}
+const kolaci= {
+    1:"Bakin kolac",
+    2:"Bakini kolaci",
+    3:"Bela bajadera",
+    4:"Coko Breskvice",
+    5:"Ciz kejt u casi",
+    6:"Coko mus u casi",
+    7:"Crna bajadera",
+    8:"nig",
+    9:"Kreamasta sa orasima",
+    10:"Moskva",
+    11:"Nugat",
+    12:"Posna ester",
+    13:"Posna reforma",
+    14:"Puslica",
+    15:"Reforma",
+    16:"Snikers",
+    17:"Srneca leđa",
+    18:"Švarcvald",
+    19:"Tiramisu",
+    20:"Kapri",
+    21:"Kinderino",
+    22:"Kreamasta sa orasima",
+    23:"Moskva",
+    24:"Nugat",
+    25:"Posna ester",
+    26:"Posna reforma",
+    27:"Puslica",
+    28:"Reforma",
+    29:"Snikers",
+    30:"Srneca leđa",
+    31:"Švarcvald",
+}
+
 let redniBrojStrane=1;
 let trenustniNiz=sviNizovi[redniBrojStrane];
 let idTorte;
@@ -188,7 +243,7 @@ window.onload = function(){
 
 
 
-let redniBrojSLike;
+let redniBrojSLike="sm1";
 
 $("#x").click(()=>{
     $(".view").css("opacity","0");  
@@ -200,6 +255,13 @@ $("#x").click(()=>{
 let minSlika;
 let maxSlika;
 let vidljiveSlike
+
+let idSlike;
+let vrstaTorte;
+let redniBroj;
+
+
+
 
 $(document).on("click", ".slikaTorte", function() {
     $("body").css("overflow-y","hidden");
@@ -213,13 +275,31 @@ $(document).on("click", ".slikaTorte", function() {
     $("#velikaSlika").attr("src",$(this).attr("src"))
 
     redniBrojSLike=$(this).attr("id");
-    $("#sifra").text(redniBrojSLike)
+    vrstaTorte=redniBrojSLike.substring(0,2);   
+    idSlike=redniBrojSLike.substring(2);
+
+
+    
+
+    
+    
+    if(vrstaTorte=="PT"){
+        $("#sifra").text(presekTorti[idSlike]);
+    }
+    else{
+        $("#sifra").text(redniBrojSLike);
+    }
+
+
+    console.log("redniBorojSLike="+redniBrojSLike);
+    console.log("idSlike="+idSlike);
+    console.log("vrstaTorte="+vrstaTorte);
 
     vidljiveSlike=$(".slike > img").filter(function() {
         return $(this).css("display") !== "none";
     });
     
-
+       
 
     minSlika = $(".slike > img:first-of-type").attr("id");
     minSlika=minSlika.substring(2)
@@ -229,10 +309,8 @@ $(document).on("click", ".slikaTorte", function() {
     
     
 });
-let idSlike;
-let vrstaTorte;
 
-let redniBroj;
+
 
 
 
