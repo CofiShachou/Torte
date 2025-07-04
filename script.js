@@ -236,9 +236,7 @@ $(".brojStrane").click(function(){
 
 
 
-window.onload = function(){
-    strana();
-}
+
 
 
 
@@ -372,3 +370,8 @@ $("#napred").click(()=>{
     }
 
 })
+
+
+window.onload = function(){
+    strana();
+}
