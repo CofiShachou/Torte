@@ -20,13 +20,14 @@
     font-weight:500;
     white-space: normal;
     scroll-behavior: smooth;
+    user-select-color: red;
 }
 body{
     --clr1:rgb(223, 241, 241);
     --clr2:rgb(232, 243, 237);
 
     --primary:rgb(255, 255, 255);
-     --secondary1:#d88fc3;
+     --secondary1:#e9a2d5;
     --secondary2:rgb(48, 199, 206);
     --secondary3: rgb(101, 170, 165);  
 
@@ -558,6 +559,44 @@ footer button{
 } */
 
 
+
+
+
+
+/* ⁡⁢⁣⁣Cenovnik⁡ */
+
+.ceneWrap{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.cene{
+    display: grid;
+    grid-template-columns: 50vw 300px;
+    grid-auto-rows: 120px;
+    align-items: stretch;
+
+    background-color: var(--secondary3);
+    border-radius: 20px;
+
+    padding: 1rem;
+}
+.cene div{
+    border-bottom: 5px solid var(--primary);
+    padding: 1rem;
+}
+.cene div>p:last-of-type{
+    color: black;
+}
+.cene div>p:first-of-type{
+    color: var(--primary);
+    font-size: 30px;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px){
     
     footer{
@@ -582,4 +621,13 @@ footer button{
     header>ul{
         gap: 0px;
     }   
+}
+
+
+
+
+
+::selection {
+  background: var(--secondary1); /* žuta pozadina */
+  color: var(--primary);
 }
