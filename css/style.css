@@ -20,7 +20,6 @@
     font-weight:500;
     white-space: normal;
     scroll-behavior: smooth;
-    user-select-color: red;
 }
 body{
     --clr1:rgb(223, 241, 241);
@@ -78,7 +77,7 @@ i{
 li>i{
     font-size: 12px;
 }
-header>ul>li, header>ul>li>a{
+header>ul>li, header>ul>li>a, header>ul>li>p{
     font-size:20px;
     height: 100%;
     display: flex;
@@ -582,11 +581,11 @@ footer button{
     padding: 1rem;
 }
 .cene div{
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 3px solid var(--secondary1);
     padding: 1rem;
 }
 .cene div>p:last-of-type{
-    color: black;
+    color: rgb(91, 91, 91);
 }
 .cene div>p:first-of-type{
     color: var(--primary);
