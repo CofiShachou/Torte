@@ -236,7 +236,9 @@ $(".brojStrane").click(function(){
 
 
 
-
+window.onload = function(){
+    strana();
+}
 
 
 
@@ -330,13 +332,20 @@ $("#nazad").click(()=>{
     idSlike=parseInt(idSlike)-1;
     redniBrojSLike=vrstaTorte+idSlike;
     $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
-    $("#sifra").text(redniBrojSLike)
+    if(vrstaTorte=="PT"){
+        $("#sifra").text(presekTorti[idSlike]);
+    }else{
+        $("#sifra").text(redniBrojSLike)
+    }
 
     if(idSlike==(minSlika-1)){
         redniBrojStrane--;
         strana();
     }
-
+    
+    console.log("Min slika= ",minSlika);
+    console.log("Idslike= ",idSlike);
+    
 })
 
 $("#napred").click(()=>{
@@ -360,18 +369,19 @@ $("#napred").click(()=>{
     idSlike=parseInt(idSlike)+1;
     redniBrojSLike=vrstaTorte+idSlike;
     $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
-    $("#sifra").text(redniBrojSLike)
+    if(vrstaTorte=="PT"){
+        $("#sifra").text(presekTorti[idSlike]);
+    }else{
+        $("#sifra").text(redniBrojSLike)
+    }
 
-    if(idSlike==(maxSlika+1)){
-        
+    
+    
+    if(idSlike==(maxSlika+1) && (redniBrojStrane!=(maxStrana-2))){
         redniBrojStrane++;
         strana();
         
     }
-
+console.log("Max strana= "+ maxStrana);
+    console.log("redni broj strane= "+ redniBrojStrane);
 })
-
-
-window.onload = function(){
-    strana();
-}
