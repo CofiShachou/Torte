@@ -48,7 +48,7 @@ h1,h2,h3,h4{
 /* ⁡⁢⁣⁣.........TAGS.........⁡ */
 h1{
     /* font-size: 50px; */
-    font-size: 120%;
+    /* font-size: 120%; */
     text-align: center;
 }
 h2{
@@ -88,12 +88,27 @@ header>ul>li, header>ul>li>a, header>ul>li>p{
 p{
     font-size: 20px;
 }
+.footerDropDown{
+    display: flex;
+    max-height:1000px;
+}
+.footerDropDown .nav{
+    display: flex;
+    gap: 1vw;
+}
+.footerDropDown .nav .subMeni{
+    margin-top: 12px;
+}
+.footerDropDown .nav h4{
+    margin-top: 12px;
+}
 footer{
     padding: 50px 15vw;
     display: flex;
     margin-top: 20px;
     background-color: var(--secondary3);
     justify-content: center;
+    gap: 2vw;
     /* align-items: center; */
 }
 footer *{
@@ -127,6 +142,11 @@ footer button{
     align-self: center;
 }
 
+iframe{
+    width: 30vw;
+    height: 15vw;
+}
+
 
 /* ⁡⁢⁣⁣........CUSTOM CLASS..........⁡ */
 .ml{
@@ -139,6 +159,12 @@ footer button{
     margin-top: 10px;
     width: 100%;
 }
+.opis>p:first-of-type{
+    margin-top: 24px;
+}
+.opis>p:last-of-type{
+    margin-top: 16px;
+}
 .row{
     display: flex;
     align-items: center;
@@ -147,9 +173,6 @@ footer button{
     display: flex;
     flex-direction: column;
     align-items:start;
-}
-.col p{
-    font-size: 60%;
 }
 
 .middle img{
@@ -301,14 +324,14 @@ footer button{
 
 
 
-.cene{
+.mainCene{
     background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* gap: 16px; */
 }
-.cene>:last-child{
+.mainCene>:last-child{
     margin-top: 24px;
 }
 .button{
@@ -344,7 +367,7 @@ footer button{
     background-image: url("../resources/images/Slano/KANAPEI.webp");
 }
 .kp{
-    background-image: url("../resources/images/PT/Cheesecake.webp");
+    background-image: url("../resources/images/PT/PT3.webp");
 }
 .kat{
     background-size: cover;
@@ -374,6 +397,7 @@ footer button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     /* align-items: center; */
 }
 
@@ -386,53 +410,54 @@ footer button{
     grid-template-columns: 20vw 50vw 7vw;
     grid-auto-rows: 70px;
     align-items: stretch;
-    background-color: var(--secondary3);
+    /* background-color: var(--secondary3); */
     
 }
 .sve div div{
     display: flex;
     align-items: center;
-    border-bottom: 3px solid var(--secondary1);
-    border-left: 3px solid var(--secondary1);
+    border-bottom: 2px solid var(--secondary3);
+    border-left: 2px solid var(--secondary3);
 
     padding: 1rem;
 }
 .sve div div p{
-    color: var(--primary);
+    color: black;
     font-size: 25px;
 }
 .KWrapper div:has(i){
     display: flex;
     justify-content: center;
-    border-right: 3px solid var(--secondary1);
-    text-shadow: 1px 1px 5px black;
+    border-right: 2px solid var(--secondary3);
 }
 .sve div div:has(h3){
-    border-top: 3px solid var(--secondary1);
+    border-top: 2px solid var(--secondary3);
 }
-.sve div div:nth-child(3){
-    border-right: 3px solid var(--secondary1);
+.sve div div:nth-of-type(3n){
+    border-right: 2px solid var(--secondary3);
 }
 .sve div>h3{
     text-shadow: 1px 1px 5px black;
     font-size: 1.5vw;
     color: var(--secondary1);
+    
 }
 .KWrapper div i{
-    color: var(--secondary1);
-    font-size: 40px;
+    color: var(--secondary3);
+    font-size: 30px;
+    
 }
 .SWrapper{
     display: grid;
     grid-template-columns: 20vw 40vw 10vw;
     grid-auto-rows: 5vw;
     align-items: stretch;
-    background-color: var(--secondary3);
+    /* background-color: var(--secondary3); */
 }
 
 
 .TWrapper{
-    background-color: var(--secondary3);
+    /* background-color: var(--secondary3); */
     padding: 1vw;
     border-radius: 10px;
     margin-bottom: 2vw;
@@ -623,8 +648,8 @@ footer button{
     grid-auto-rows: 120px;
     align-items: stretch;
 
-    background-color: var(--secondary3);
-    border-radius: 20px;
+    background-color: var(--primary);
+    /* border-radius: 20px; */
 
     padding: 1rem;
 }
@@ -632,14 +657,14 @@ footer button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 3px solid var(--secondary1);
+    border-bottom: 2px solid var(--secondary1);
     padding: 1rem;
 }
 .cene div>p:last-of-type{
-    color: rgb(91, 91, 91);
+    color: black;
 }
 .cene div>p:first-of-type{
-    color: var(--primary);
+    color: var(--secondary3);
     font-size: 30px;
 }
 
