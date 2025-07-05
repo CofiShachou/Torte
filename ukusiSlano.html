@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <header id="header">
+        <a href="index.html"><img src="resources/images/logo.png" alt="logo" class="logo"></a>
+        <ul>
+            <li id="meni">Ponuda ukusa 
+                <i class="fa-solid fa-chevron-down down"></i>
+
+                <div class="dropDown">
+                    <ul class="nav">
+                        <li id="torte"><h3>Torte</h3>
+                            <ul class="subMeni">
+                                <li><h4>Svecane</h4></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="svecaneSaMason.html">Sa maso</a></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="svecaneSaSlagom.html">Sa slagom</a></li>
+                                <li><h4>Mladalacke torte</h4></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="mladalackeSaMasom.html">Sa maso</a></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="mladalackeSaSalgom.html">Sa slagom</a></li>
+                                <li><h4>Decije torte</h4></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="decijeSaMasom.html">Sa maso</a></li>
+                                <li class="ml"><i class="fa-solid fa-star"></i><a href="decijeSaSlagom.html">Sa slagom</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="ukusi"><h3>Ukusi</h3>
+                            <ul class="subMeni">
+                                <li><i class="fa-solid fa-star"></i><a href="ukusiTorte.html" id="torta">Torte</a></li>
+                                <li><i class="fa-solid fa-star"></i><a href="ukusiKolaci.html" id="kolac">Kolaci</a></li>
+                                <li><i class="fa-solid fa-star"></i><a href="ukusiSlano.html" id="slano">Slano</a></li>
+                            </ul>
+                        </li>
+                        <li id="figure"><h3>Ostalo</h3>
+                            <ul class="subMeni">
+                                <li><i class="fa-solid fa-star"></i><a href="figureZaMladence.html">Figure</a></li>
+                                <li><i class="fa-solid fa-star"></i><a href="kolaci.html">Kolaci</a></li>
+                                <li><i class="fa-solid fa-star"></i><a href="slano.html">Slano</a></li>
+                                <li><i class="fa-solid fa-star"></i><a href="presekTorti.html">Presek torti</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+
+            </li>
+            <li><a href="cenovnik.html">Cenovnik</a></li>
+            <li><p id="kontakt">Kontakt</p></li>
+        </ul>
+    </header>
+
+    
+    
+    <div class="sve">
+        <h2>Slano vrste</h2>
+
+        <div class="SWrapper">
+            <div>
+                <h3>Naziv</h3>
+            </div>
+            <div>
+                <h3>Sadrzaj</h3>
+            </div>
+            <div>
+                <h3>Kolicina</h3>
+            </div>
+            <div><p>KANAPEI</p></div>
+            <div><p>kreker, kačkavalj, kulen, pečenica, pršuta, maslina, krastavac</p></div>
+            <div><p>1kg-45 do 50kom</p></div>
+
+            <div><p>MINI SENDVIČI</p></div>
+            <div><p>na bagetu, namaz, pečenica, feta, rendani kačkavalj, krastavčići</p></div>
+            <div><p>1kg-26kom</p></div>
+
+            <div><p>KOKTEL PECIVO</p></div>
+            <div><p>perece sa sirom, štapići mak-susam, štanglice sa kikirikijem</p></div>
+            <div><p>1kg-60kom</p></div>
+
+            <div><p>SLANE TORTE</p></div>
+            <div><p>6 vrsta - pečurke, šunka, spanać, ajvar, pohovana paprika, tost torta</p></div>
+            <div><p>1,5kg-49 kockica</p></div>
+
+            <div><p>SLANI ROLATI</p></div>
+            <div><p>4 vrste - šunka, spanać, ajvar, pečurke</p></div>
+            <div><p>1,5kg-25 parčića</p></div>
+
+            <div><p>SLANI ROLAT ZDENKA</p></div>
+            <div><p>zdenka, suvi vrat, puter, jaja</p></div>
+            <div><p>1kg-45 do 50 parčića</p></div>
+
+            <div><p>PITE-POSNE/MRSNE</p></div>
+            <div><p>meso, sir, spanać, pečurke, kupus, krompir</p></div>
+            <div><p>1kg-30 kom</p></div>
+
+            <div><p>PROJE-VEĆE</p></div>
+            <div><p></p></div>
+            <div><p>1kg-23 kom</p></div>
+
+            <div><p>PROJE-MINI</p></div>
+            <div><p></p></div>
+            <div><p>1kg-40 do 45 kom</p></div>
+
+            <div><p>KIFLICE</p></div>
+            <div><p>sir, šunka, prazne</p></div>
+            <div><p>1kg-45 do 50kom</p></div>
+
+            <div><p>MINI PIZZE</p></div>
+            <div><p></p></div>
+            <div><p>1kg-30 kom</p></div>
+
+            <div><p>SALATE U KORPICI</p></div>
+            <div><p>ruska, mimoza</p></div>
+            <div><p>1kg-30 kom</p></div>
+
+            <div><p>SALATE U KORPICI</p></div>
+            <div><p>barena junetina ili piletina, pečurke, svež krastavac, praziluk, pavlaka</p></div>
+            <div><p>1kg-30 kom</p></div>
+
+            <div><p>SALATE U KORPICI</p></div>
+            <div><p>urnebes, susam i feta sir</p></div>
+            <div><p>1kg-35 kom</p></div>
+
+            <div><p>PUNJENA JAJA</p></div>
+            <div><p>kuvano jaje, senf, majonez</p></div>
+            <div><p>20-25 polutki</p></div>
+
+            <div><p>ROLOVANA PILETINA</p></div>
+            <div><p>pileće meso, šunka, kačkavalj, slanina</p></div>
+            <div><p>1kg-10 kom</p></div>
+
+            <div><p>KANAPEI POSNI</p></div>
+            <div><p>riba, krompir, tost, kačkavalj, maslina, krastavac</p></div>
+            <div><p></p></div>
+
+            <div><p>SLANA TORTA POSNA</p></div>
+            <div><p>tost, ajvar, riba, kačkavalj</p></div>
+            <div><p></p></div>
+
+            <div><p>OKRUGLI SENDVIČI</p></div>
+            <div><p>mini zemička, kačkavalj, pečenica, namaz, majonez, krastavac</p></div>
+            <div><p></p></div>
+
+            <div><p>OVAL - SUHOMESNATO</p></div>
+            <div><p>6 osoba</p></div>
+            <div><p>500g</p></div>
+
+            <div><p></p></div>
+            <div><p>goveđa pršuta</p></div>
+            <div><p></p></div>
+
+            <div><p></p></div>
+            <div><p>svinjska pršuta</p></div>
+            <div><p></p></div>
+
+            <div><p></p></div>
+            <div><p>pečenica</p></div>
+            <div><p></p></div>
+
+            <div><p></p></div>
+            <div><p>čajna</p></div>
+            <div><p></p></div>
+
+            <div><p></p></div>
+            <div><p>slanina</p></div>
+            <div><p></p></div>
+
+            <div><p>OVAL - VEĆI</p></div>
+            <div><p>8 osoba</p></div>
+            <div><p></p></div>
+
+            <div><p>kanapei</p></div>
+            <div><p>12 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>pite</p></div>
+            <div><p>11 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>kiflice</p></div>
+            <div><p>17 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>korpice</p></div>
+            <div><p>7 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slane torte</p></div>
+            <div><p>7 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slani rolat</p></div>
+            <div><p>10 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>zdenka</p></div>
+            <div><p>7 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>punjena jaja</p></div>
+            <div><p>5 polutki</p></div>
+            <div><p></p></div>
+
+            <div><p>OVAL - SREDNJI</p></div>
+            <div><p>6 osoba</p></div>
+            <div><p></p></div>
+
+            <div><p>kanapei</p></div>
+            <div><p>10 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>pite</p></div>
+            <div><p>9 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>kiflice</p></div>
+            <div><p>15 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>korpice</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slane torte</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slani rolat</p></div>
+            <div><p>8 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>zdenka</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>punjena jaja</p></div>
+            <div><p>3 polutke</p></div>
+            <div><p></p></div>
+
+            <div><p>OVAL - POSNI</p></div>
+            <div><p>6 osoba</p></div>
+            <div><p></p></div>
+
+            <div><p>kanapei</p></div>
+            <div><p>10 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>pite</p></div>
+            <div><p>9 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>korpice</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slane torte</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slani rolat</p></div>
+            <div><p>8 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>zdenka</p></div>
+            <div><p>5 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>punjena jaja</p></div>
+            <div><p>3 polutke</p></div>
+            <div><p></p></div>
+
+            <div><p>OVAL 5–11</p></div>
+            <div><p>5 osoba</p></div>
+            <div><p></p></div>
+
+            <div><p>kanapei</p></div>
+            <div><p>8 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>pite</p></div>
+            <div><p>8 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>kiflice</p></div>
+            <div><p>13 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>korpice</p></div>
+            <div><p>4 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slane torte</p></div>
+            <div><p>4 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>slani rolat</p></div>
+            <div><p>6 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>zdenka</p></div>
+            <div><p>4 kom</p></div>
+            <div><p></p></div>
+
+            <div><p>punjena jaja</p></div>
+            <div><p>2 polutke</p></div>
+            <div><p></p></div>
+
+        </div>
+                    
+    </div>
+        
+    
+    
+
+    <footer id="footer">
+        <div class="col">
+            <h2>Porucite telefonom</h2>
+            <button>011 3460 136</button>
+            <button>064 2333 272</button>
+
+            <div class="row">
+                <i>sat</i>
+                <div class="col">
+                    <h3>Radno vreme</h3>
+                    <p>Utorak - Nedelja: 8 - 20h. Ponedeljkom ne radimo.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <i>lokacija</i>
+                <div class="col">
+                    <h3>Lokacija</h3>
+                    <p>Cvetanova ćuprija 48, Veliki Mokri Lug, Beograd.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11331.932672524545!2d20.518082!3d44.760758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70b400000001%3A0x69c6d290ed9053eb!2sAtanaskovic%20S!5e0!3m2!1sen!2sus!4v1746567812497!5m2!1sen!2sus" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h3>Pratite nas na Instagramu</h3>
+            <a href="">@poslasticarnicaatanaskovic</a>
+            <a href="">@jestive_slike_atanaskovic_s</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
