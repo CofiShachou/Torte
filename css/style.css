@@ -57,6 +57,8 @@ h2{
 }
 
 header{
+    position: sticky;
+    top: 0%;
     display: flex;
     justify-content:center;
     gap: 7vw;
@@ -109,7 +111,14 @@ footer{
     background-color: var(--secondary3);
     justify-content: center;
     gap: 2vw;
+    border: 2px solid var(--secondary3);
     /* align-items: center; */
+}
+footer>div:first-of-type{
+    transform-origin: 0.1s;
+    border-radius: 20px;
+    border: 4px solid var(--secondary3);
+    padding: 0.5vw;
 }
 footer *{
     color: var(--primary);

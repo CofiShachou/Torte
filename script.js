@@ -1,3 +1,16 @@
+$("#kontakt").click(()=>{
+    $('html, body').animate({
+    scrollTop: $('#footer').offset().top
+    }, 0);
+        setTimeout(() => {
+            setTimeout(() => {
+            $("footer>div:first-of-type").css("border","4px solid var(--secondary1)");
+                setTimeout(() => {
+                    $("footer>div:first-of-type").css("border","4px solid var(--secondary3)");
+                }, 1000);
+             }, 100);    
+        }, 650);
+})
 const sviNizovi = {
     1:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
     2:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
