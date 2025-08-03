@@ -4,9 +4,9 @@ $("#kontakt").click(()=>{
     }, 0);
         setTimeout(() => {
             setTimeout(() => {
-            $("footer>div:last-of-type").css("border","4px solid var(--secondary1)");
+            $("footer>div:nth-child(1)").css("border","4px solid var(--secondary1)");
                 setTimeout(() => {
-                    $("footer>div:last-of-type").css("border","4px solid var(--secondary3)");
+                    $("footer>div:nth-child(1)").css("border","4px solid var(--secondary3)");
                 }, 1000);
              }, 100);    
         }, 650);
