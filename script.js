@@ -4,9 +4,9 @@ $("#kontakt").click(()=>{
     }, 0);
         setTimeout(() => {
             setTimeout(() => {
-            $("footer>div:first-of-type").css("border","4px solid var(--secondary1)");
+            $("footer>div:last-of-type").css("border","4px solid var(--secondary1)");
                 setTimeout(() => {
-                    $("footer>div:first-of-type").css("border","4px solid var(--secondary3)");
+                    $("footer>div:last-of-type").css("border","4px solid var(--secondary3)");
                 }, 1000);
              }, 100);    
         }, 650);
@@ -187,7 +187,7 @@ function strana(){
     
     $("p").each(function(){
         if($(this).text()==redniBrojStrane){
-            $(".brojStrane").css("color","white")
+            $(".brojStrane").css("color","var(--secondary3)")
             $(this).css('color', 'var(--secondary1)');
         }
     })
@@ -227,7 +227,7 @@ $(".brojStrane").click(function(){
     redniBrojStrane=parseInt(t);
     trenustniNiz=sviNizovi[redniBrojStrane];
 
-    $(".brojStrane").css("color","white")
+    $(".brojStrane").css("color","var(--secondary3)")
     $(this).css("color","var(--secondary1)")
 
     if(redniBrojStrane<4)
