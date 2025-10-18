@@ -216,21 +216,95 @@ iframe{
 .hero h1{
     color: var(--primary);
 }
-
+.side{
+    font-size: 15px;
+    transform: rotateZ(-90deg);
+}
 .down{
     margin-left: 7px;
     font-size: 15px;
     transform: rotateZ(0deg);
 }
-#meni:hover .down{
+#torte:hover .down{
     transform: rotateZ(-180deg);
+}
+#figure:hover .down{
+    transform: rotateZ(-180deg);
+}
+#ponuda:hover .down{
+    transform: rotateZ(-180deg);
+}
+.dropDown,#pd{
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    background-color: var(--secondary3);
+    border: 2px solid var(--secondary1);
+
+    padding: 10px 20px;
+    gap: 10px;
+}
+#torte:hover .dropDown{
+visibility: visible;
+    opacity: 1;
+}
+#ponuda:hover #pd{
+    visibility: visible;
+    opacity: 1;
+    width: 200px;
+}
+#header li{
+    cursor: pointer;
+}
+#header a{
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
 
 }
+#t1,#t2,#t3{
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondary1);
+    position: absolute;
+    width: auto;
 
+    left: 100%;
+    top: -1.5%;
+    background-color: var(--secondary3);
+    padding: 10px 20px;
+    gap: 10px;
+}
+#t2{
+    top: 30%;
 
+}
+#t3{
+    top: 45%;
+}
+.svecane:hover #t1{
+    visibility: visible;
+    opacity: 1;
+}
+.mladenacke:hover #t2{
+    visibility: visible;
+    opacity: 1;
+}
+.decije:hover #t3{
+    visibility: visible;
+    opacity: 1;
+}
+/*
 
 .dropDown{
     visibility: hidden;
+    opacity: 0;
     display: flex;
     position: absolute;
     left: 0%;
@@ -240,7 +314,6 @@ iframe{
     transition-duration: 0.5s;
 
     max-height:1000px;
-    opacity: 0;
     background-color: var(--secondary3);
     border-radius: 0px 0px 20px 20px;
     border-style:  solid;
@@ -252,8 +325,8 @@ iframe{
 }
 #meni:hover .dropDown{
     visibility: visible;
-    margin-top: 0.7vw;
     opacity: 1;
+    margin-top: 0.7vw;
 }
 .dropDown *{
     white-space: nowrap;
@@ -275,8 +348,8 @@ iframe{
 .dropDown>.nav>li>h3{
     margin-bottom: 0.5vw;
     color: var(--secondary1);
-    /* text-decoration: var(--secondary3) underline; */
     text-underline-offset: 10px;
+     //text-decoration: var(--secondary3) underline; 
 }
 /* .dropDown>.nav>li>h3:hover:after{
     transition-duration: 1s;
@@ -294,6 +367,7 @@ iframe{
     margin-top: 3px;
     background-color: var(--secondary2);
 } */
+ /*
 .dropDown>.nav>li h4{
     margin-top: 10px;
     color: var(--secondary2);
@@ -301,6 +375,8 @@ iframe{
 .subMeni>li:first-child>h4{
     margin-top: 0px;
 }
+*/
+/*⁡⁢⁣⁣ ////////////////////////////////////////////////////////⁡ */
 .logo{
     width: 7vw;
     margin-left: -200px;
