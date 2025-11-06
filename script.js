@@ -131,7 +131,63 @@ const kolaci= {
     30:"Srneca leđa",
     31:"Švarcvald",
 }
-
+const slano={
+    1:"Kanapei", 
+    2:"Kiflice pite", 
+    3:"Kiflice proje mini Pice", 
+    4:"kiflice", 
+    5:"Korpa sa pecivom", 
+    6:"Lisnata pogaca", 
+    7:"Lux oval", 
+    8:"Lux oval beli", 
+    9:"Lux oval dinja", 
+    10:"Mesni roštilj", 
+    11:"Mesni roštilj (kobasice,mini ćevapi, belo susam)", 
+    12:"Mini pice", 
+    13:"Mini proje", 
+    14:"Mini sendvici", 
+    15:"Okrugli sendvici", 
+    16:"Oval 1", 
+    17:"Oval 2", 
+    18:"Oval 3", 
+    19:"Oval 5", 
+    20:"Oval 6", 
+    21:"Oval 10 posno", 
+    22:"Oval suhomesnato", 
+    23:"Plato beli", 
+    24:"Pogaca sa 40 jufki", 
+    25:"Posni oval", 
+    26:"Posni rolati", 
+    27:"Prazne kiflie", 
+    28:"Rolati sa zdenkom", 
+    29:"Rolo paprika belo sa sargarepom i mini karađorđeve", 
+    30:"Rolo paprika mini karađorđeve rolovano pile", 
+    31:"Rolovana paprika", 
+    32:"Rolovano pile", 
+    33:"20200908_183407", 
+    34:"20200908_183407", 
+    35:"20200908_183407", 
+    36:"20200908_183407", 
+    37:"20200908_183407", 
+    38:"20200908_183407", 
+    39:"20200908_183407", 
+    40:"20200908_183407", 
+    41:"20200908_183407", 
+    42:"Slana torta tost rolat spanac", 
+    43:"Slane korpice", 
+    44:"Slane pite", 
+    45:"Slane torte", 
+    46:"Slani mafini sa kikirikijem", 
+    47:"Slani rolati", 
+    48:"Slavki kolac", 
+    49:"Belo meso sa susamom", 
+    50:"Brusketi", 
+    51:"Ćevapi belo sa susamom", 
+    52:"Daska miks", 
+    53:"Daska suhomesnato", 
+    54:"Grčka salata", 
+    55:"Kajzerice", 
+}
 let redniBrojStrane=1;
 let trenustniNiz=sviNizovi[redniBrojStrane];
 let idTorte;
@@ -149,7 +205,7 @@ function strana(){
              $(".slikeWrap .slike img").css("opacity","0");
                 $(".slikeWrap .slike").remove();
                 $(".slikeWrap").append(`
-                 <div class="slike">
+                <div class="slike">
                 <img src="resources/images/`+idTorte+`/`+idTorte+``+trenustniNiz[0]+`.webp" alt="torta" loading="lazy" class="slikaTorte" id="`+idTorte+``+trenustniNiz[0]+`">
                 <img src="resources/images/`+idTorte+`/`+idTorte+``+trenustniNiz[1]+`.webp" alt="torta" loading="lazy" class="slikaTorte" id="`+idTorte+``+trenustniNiz[1]+`">
                 <img src="resources/images/`+idTorte+`/`+idTorte+``+trenustniNiz[2]+`.webp" alt="torta" loading="lazy" class="slikaTorte" id="`+idTorte+``+trenustniNiz[2]+`">
@@ -307,10 +363,18 @@ $(document).on("click", ".slikaTorte", function() {
     if(vrstaTorte=="PT"){
         $("#sifra").text(presekTorti[idSlike]);
     }
+    else if(vrstaTorte=="KO"){
+        $("#sifra").text(kolaci[idSlike]);
+    }    
+    else if(vrstaTorte=="SL"){
+        $("#sifra").text(slano[idSlike]);
+    }
     else{
         $("#sifra").text(redniBrojSLike);
     }
-
+    
+    
+    
 
     console.log("redniBorojSLike="+redniBrojSLike);
     console.log("idSlike="+idSlike);
@@ -362,10 +426,21 @@ $("#nazad").click(()=>{
     idSlike=parseInt(idSlike)-1;
     redniBrojSLike=vrstaTorte+idSlike;
     $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
+
+
+
+
     if(vrstaTorte=="PT"){
         $("#sifra").text(presekTorti[idSlike]);
-    }else{
-        $("#sifra").text(redniBrojSLike)
+    }
+    else if(vrstaTorte=="KO"){
+        $("#sifra").text(kolaci[idSlike]);
+    }    
+    else if(vrstaTorte=="SL"){
+        $("#sifra").text(slano[idSlike]);
+    }
+    else{
+        $("#sifra").text(redniBrojSLike);
     }
 
     if(idSlike==(minSlika-1)){
@@ -410,11 +485,21 @@ $("#napred").click(()=>{
         redniBrojSLike=vrstaTorte+idSlike;
 
         $("#velikaSlika").attr("src",`resources/images/`+vrstaTorte+`/`+vrstaTorte+idSlike+`.webp`)
-        if(vrstaTorte=="PT"){
-            $("#sifra").text(presekTorti[idSlike]);
-        }else{
-            $("#sifra").text(redniBrojSLike)
-        }
+
+
+
+       if(vrstaTorte=="PT"){
+        $("#sifra").text(presekTorti[idSlike]);
+    }
+    else if(vrstaTorte=="KO"){
+        $("#sifra").text(kolaci[idSlike]);
+    }    
+    else if(vrstaTorte=="SL"){
+        $("#sifra").text(slano[idSlike]);
+    }
+    else{
+        $("#sifra").text(redniBrojSLike);
+    }
 
     }
 
