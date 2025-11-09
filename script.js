@@ -198,8 +198,17 @@ let maxStrana;
 function strana(){
     idTorte=$(".idTorte").attr("id");
     trenustniNiz=sviNizovi[redniBrojStrane];
+
+    if($(".idTorte").text()=="Decije torte sa masom"){
+        maxStrana=$(".strane>p:last-of-type").text();
+ 
+    idTorte=$(".idTorte").attr("id");
+    trenustniNiz=sviNizovi[maxStrana-(redniBrojStrane-1)];
+    }
+
     
-    for(let i=1;i<56;i++){
+    
+    for(let i=1;i<54;i++){
         
         if(redniBrojStrane==i){
              $(".slikeWrap .slike img").css("opacity","0");
